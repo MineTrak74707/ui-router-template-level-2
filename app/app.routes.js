@@ -5,8 +5,11 @@ angular.module('app')
             .state('home',{
                 url:'/home',
                 templateUrl:'home/home.html',
-                controller: function($scope){
-                    $scope.message="this is home"
-                }
+                controller:"homeCtrl"
+            });
+            .state('about',{
+                url:'/about',
+                templateUrl:'about/about.html',
+                controller:"homeCtrl"
             });
     });
